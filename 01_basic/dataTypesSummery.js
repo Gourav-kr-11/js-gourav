@@ -25,15 +25,44 @@
 // 2. Array
 // 3. Function
 
-const heroes = ["ironman","spiderman","thor"];
+// const heroes = ["ironman","spiderman","thor"];
 
-const myObj ={
-    name: "Bruce",
-    age: 30,
-    isAvenger: true
-}
+// const myObj ={
+//     name: "Bruce",
+//     age: 30,
+//     isAvenger: true
+// }
 
-const myFunction = function(){
-    console.log("Hello World");
-}
+// const myFunction = function(){
+//     console.log("Hello World");
+// }
 
+////////////////////////////////////////////////////////////////////////////
+
+// Stack (Primitive), Heap (Non-Primitive)
+// let myName = "Bruce"; // Primitive
+// let anotherName = myName; // Copying the value of myName to anotherName
+
+// console.log({myName, anotherName}); // {myName: "Bruce", anotherName: "Bruce"}
+
+// myName = "Tony"; // Changing the value of myName
+
+// console.log({myName, anotherName}); // {myName: "Tony", anotherName: "Bruce"}
+
+
+// let myHero = {
+//     name: "Steve",
+//     age: 30
+// } // Non-Primitive
+
+// let anotherHero = myHero; // Copying the reference of myHero to anotherHero
+
+// console.log({myHero, anotherHero}); // {myHero: {name: "Steve", age: 30}, anotherHero: {name: "Steve", age: 30}}
+
+// myHero.age = 31; // Changing the age property of myHero
+
+// console.log({myHero, anotherHero}); // {myHero: {name: "Steve", age: 31}, anotherHero: {name: "Steve", age: 31}}
+
+// // when we change the value of a primitive data type, it creates a new copy of that value in memory. 
+// // However, when we change the value of a non-primitive data type, it modifies the original object in memory, 
+// // and all references to that object will reflect the change.
